@@ -1,1 +1,18 @@
+## mako
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
 
+<%block name="pagetitle">${_("Contact")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+  <section class="container about">
+    <h1>${_("Contact")}</h1>
+
+    <ul> 
+      <li> ${_("Gole sub-city, woreda 03, Zewdu Gessese building, house no. 2414/2nd floor Addis Ababa,")} </li>
+      <li> ${_("hello@gobeze.com ")}</li> 
+      <li>  ${_("+251(0)118633128 ")}</li> 
+    </ul>
+  </section>
+</main>
