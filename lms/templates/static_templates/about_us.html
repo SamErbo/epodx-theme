@@ -1,1 +1,17 @@
 
+## mako
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("About Us")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+  <section class="container about">
+    <h1>${_("About Us")}</h1>
+
+   <p> ${_(" Gobeze Consult is a company on a mission to change the business culture in Ethiopia. We are passionate about helping good people win by orchestrating the conditions that will allow them to succeed in business and in life. Gobeze Training, a division of Gobeze Consult, our primary aim is to bride the knowledge and skills gap that holds otherwise great individuals from realizing their true potential.")} </p>
+    <p> $_(" Gobeze is Ethiopia’s fastest growing skills training and professional development provider. Hundreds have gone through our programs as we continue to introduce programs that address the skills gap in business and digital fields. We work with some of the best trainers and are continuously on the lookout for excellent professionals searching for an opportunity to share their knowledge.")}</p>
+    <p> $(_(" We provide tailored courses, workshops and seminars that address skill gaps in specific areas. We believe will be instrumental in changing the business culture in Ethiopia and are going to be in great demand in the next five to ten years.")} </p>
+  </section>
+</main>
